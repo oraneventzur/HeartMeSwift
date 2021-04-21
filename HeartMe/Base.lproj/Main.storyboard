@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="HeartMe" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello and welcome to HeartMe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6Xb-VJ-OJi">
+                                <rect key="frame" x="20" y="64" width="374" height="26.5"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Please enter blood test name and value at the corresponding text fields" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gbp-0U-I81">
+                                <rect key="frame" x="20" y="100.5" width="374" height="41"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="tyi-Cq-MuL">
+                                <rect key="frame" x="20" y="181.5" width="374" height="34"/>
+                                <accessibility key="accessibilityConfiguration" hint="Type blood test name..."/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="VKl-16-7bV">
+                                <rect key="frame" x="20" y="245.5" width="374" height="34"/>
+                                <accessibility key="accessibilityConfiguration" hint="Type blood test result value"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" keyboardType="numberPad"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dwz-4c-LwK">
+                                <rect key="frame" x="80" y="339.5" width="254" height="30"/>
+                                <color key="backgroundColor" name="AccentColor"/>
+                                <state key="normal" title="SUBMIT">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="onSubmitButtonClicked:" destination="BYZ-38-t0r" eventType="touchUpInside" id="aDb-hx-mG6"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FZh-v0-GqN">
+                                <rect key="frame" x="20" y="449.5" width="374" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="nMB-fv-lio"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="FZh-v0-GqN" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="0La-ow-Nd6"/>
+                            <constraint firstItem="dwz-4c-LwK" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="80" id="136-Q4-dY1"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="VKl-16-7bV" secondAttribute="trailing" constant="20" id="6r9-ID-q9p"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="dwz-4c-LwK" secondAttribute="trailing" constant="80" id="7L6-F1-IAW"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="tyi-Cq-MuL" secondAttribute="trailing" constant="20" id="DBk-Un-akH"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="6Xb-VJ-OJi" secondAttribute="trailing" constant="20" id="FCw-sh-KcL"/>
+                            <constraint firstItem="VKl-16-7bV" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="VmY-AX-cU7"/>
+                            <constraint firstItem="VKl-16-7bV" firstAttribute="top" secondItem="tyi-Cq-MuL" secondAttribute="bottom" constant="30" id="XVf-M3-6Aj"/>
+                            <constraint firstItem="FZh-v0-GqN" firstAttribute="top" secondItem="dwz-4c-LwK" secondAttribute="bottom" constant="80" id="ZxX-1w-gIl"/>
+                            <constraint firstItem="6Xb-VJ-OJi" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="cNv-Hb-V7Y"/>
+                            <constraint firstItem="gbp-0U-I81" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="eVR-jF-WrF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="gbp-0U-I81" secondAttribute="trailing" constant="20" id="f0u-Px-Etk"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="FZh-v0-GqN" secondAttribute="trailing" constant="20" id="ked-Vs-TWd"/>
+                            <constraint firstItem="tyi-Cq-MuL" firstAttribute="top" secondItem="gbp-0U-I81" secondAttribute="bottom" constant="40" id="mIP-41-O0j"/>
+                            <constraint firstItem="6Xb-VJ-OJi" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="rxT-WG-aDb"/>
+                            <constraint firstItem="dwz-4c-LwK" firstAttribute="top" secondItem="VKl-16-7bV" secondAttribute="bottom" constant="60" id="sY3-51-46Q"/>
+                            <constraint firstItem="tyi-Cq-MuL" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sbU-t7-bm4"/>
+                            <constraint firstItem="gbp-0U-I81" firstAttribute="top" secondItem="6Xb-VJ-OJi" secondAttribute="bottom" constant="10" id="vWh-O4-jUb"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="onBoardingMessageLb" destination="gbp-0U-I81" id="EBm-yB-EaX"/>
+                        <outlet property="screenTitleLb" destination="6Xb-VJ-OJi" id="bUU-Ma-IdZ"/>
+                        <outlet property="testResultsEvaluationLb" destination="FZh-v0-GqN" id="kUp-we-IWE"/>
+                        <outlet property="userInputTestNameTf" destination="tyi-Cq-MuL" id="2oy-or-PyZ"/>
+                        <outlet property="userInputTestResValueTf" destination="VKl-16-7bV" id="QSY-h3-Gqb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="132" y="96"/>
+        </scene>
+    </scenes>
+    <resources>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
